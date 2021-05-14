@@ -1,7 +1,7 @@
-//v2 - Challenge: Enhancing the Aura
+//v2 - Challenge: Enhancing the Aura and Configurable Status Format
 fun main() {
     val name = "Madrigal"
-    val healthPoints = 51
+    val healthPoints = 50
     val isBlessed = true
     val isImmortal = false
 
@@ -30,8 +30,13 @@ fun main() {
         else -> "is in awful condition!"
     }
 
+    val hp = healthPoints
+    val h = healthStatus
+    val a = auraColor
+
     // Player Status
-    println("(${if (auraVisible) "Aura: $auraColor" else "none") " +
+    /*println("(${if (auraVisible) "Aura: $auraColor" else "No Aura"}) " +
             "(Blessed: ${if (isBlessed) "YES" else "NO"})")
-    println("$name $healthStatus")
+    println("$name $healthStatus")*/
+    println("(HP: $hp - Aura: $auraColor) -> $name $h")
 }
